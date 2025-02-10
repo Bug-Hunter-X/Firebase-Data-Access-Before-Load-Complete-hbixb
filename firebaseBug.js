@@ -1,0 +1,1 @@
+The Firebase SDK might throw an error if you try to access a property of a document snapshot before the data has been fully loaded. This can happen if you try to access the data within the `onSnapshot` listener before the listener has received the initial snapshot. This often leads to unexpected behavior because the value might be `undefined` or cause other issues. 
